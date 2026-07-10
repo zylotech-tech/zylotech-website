@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #060b14;
+    background-image: 
+      radial-gradient(circle at 20% 0%, rgba(0, 245, 255, 0.06), transparent 40%),
+      radial-gradient(circle at 80% 20%, rgba(255, 122, 69, 0.04), transparent 40%);
+  }
+
+  ::selection {
+    background: #00f5ff;
+    color: #060b14;
+  }
+
+  :focus-visible {
+    outline: 2px solid #00f5ff;
+    outline-offset: 3px;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
